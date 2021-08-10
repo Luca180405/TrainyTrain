@@ -3,7 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <script src="script.js"></script>
+
+    <title>TrainyTrain - name</title>
 
     <style>
 		* {
@@ -98,7 +101,7 @@ body {
 
 .night {
   background-color: var(--night-color);
-  height: 650px;
+  height: 800px;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
@@ -106,10 +109,10 @@ body {
 
 @keyframes right-to-left{
 	100% {
-		transform: translateX(-350%);
+		transform: translateX(-440%);
 	}
 	0% {
-		transform: translateX(350%);
+		transform: translateX(440%);
 	}
 } 
 
@@ -125,7 +128,8 @@ body {
   height: 200px;
   z-index: 4;
   flex-shrink: 0;
-  animation: right-to-left 4s ease-out;
+  animation: right-to-left 5s ease-out;
+  animation-fill-mode: forwards;
 }
 
 .train-link {
@@ -348,7 +352,7 @@ body {
     </style>
 </head>
 <body>
-    
+<div class="bg"></div>
 <div class="container">
 	<div class="chandelier">
 		<div class="chandelier-case a a-3"></div>
